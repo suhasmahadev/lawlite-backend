@@ -21,7 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/users/', include('users.urls')),
-    path('api/documents/', include('summarizer.urls')),  # all CRUD endpoints under /api/documents/
+    path('api/summarizer/document/', include('summarizer.urls')),  # all CRUD endpoints under /api/documents/
 ]
-
-
